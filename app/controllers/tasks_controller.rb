@@ -28,7 +28,7 @@ class TasksController < ApplicationController
   end
   
   def update
-    
+
     if @task.update(task_params)
       flash[:success] = 'Taskを更新しました'
       redirect_to @task
